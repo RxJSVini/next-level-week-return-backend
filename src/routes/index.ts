@@ -29,7 +29,7 @@ routes.post("/feedbacks", async (req: Request, res: Response) => {
         screenshot
     });
 
-
+    res.header['Access-Control-Allow-Origin'] = '*'
     return res.status(200).json({
         message: "Feedback enviado com sucesso!"
     });
