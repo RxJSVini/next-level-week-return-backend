@@ -7,7 +7,7 @@ dotenv.config({});
 const app = express();
 
 app.use(cors({
-    origin:"https://nlwreturnnode-production.up.railway.app/api/feedbacks"
+    origin:"https://nlwreturn-react.vercel.app"
 }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
