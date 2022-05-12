@@ -7,8 +7,8 @@ dotenv.config({})
 const app = express();
 
 app.use(cors({
-    origin:"http://localhost:3000"
-}))
+    origin:"https://nlwreturnnode-production.up.railway.app/api/feedbacks"
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use("/api", routes);
