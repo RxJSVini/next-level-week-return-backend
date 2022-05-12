@@ -11,4 +11,4 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use("/api", routes);
 
-app.listen(3333, () => console.log('Node.js is Running!'));
+app.listen(process.env.PORT || 3333, () => console.log('HTTP Status Running API'));
