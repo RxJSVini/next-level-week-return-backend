@@ -5,10 +5,10 @@ import cors from "cors";
 const app = express();
 
 app.use(cors({
-    origin:"*"
+    origin:"http://localhost:3000"
 }))
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use("/api", routes);
 
-app.listen(3000, () => console.log('Node.js is Running!'));
+app.listen(3333, () => console.log('Node.js is Running!'));
